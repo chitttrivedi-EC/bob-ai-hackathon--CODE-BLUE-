@@ -1,0 +1,74 @@
+# ============================================================
+# Bob AI Hackathon — Submission Manifest
+# Problem: D2 — Threat Intelligence Correlation & Alert
+#          Prioritisation Assistant
+# Track:   Defense & Aerospace  |  Priority: Critical Now
+# ============================================================
+
+# REQUIRED — Team / Contact
+team_name: "ThreatLens AI"
+team_members:
+  - name: "Divya"
+    role: "Lead Engineer"
+
+# REQUIRED — Problem Statement
+problem_id: "D2"
+problem_title: "Threat Intelligence Correlation & Alert Prioritisation Assistant"
+track: "Defense & Aerospace"
+priority_tag: "Critical Now"
+
+# REQUIRED — Solution Summary (≤150 words)
+solution_summary: >
+  ThreatLens AI is a production-ready pipeline that ingests alerts from four
+  heterogeneous defense data sources — SIEM logs, satellite feed metadata,
+  cyber sensor telemetry, and OSINT intelligence reports — and normalises them
+  into a unified schema stored in SQLite. A sentence-transformers + FAISS
+  semantic correlation engine groups alerts describing the same underlying
+  incident across sources. A scikit-learn Random Forest classifier scores each
+  cluster (genuine threat vs. false positive). Correlated clusters are mapped
+  to MITRE ATT&CK Enterprise technique IDs using the public STIX dataset.
+  Finally, IBM watsonx Granite-3 generates a structured BLUF (Bottom Line Up
+  Front) brief for every prioritised incident. The entire pipeline is
+  orchestrated by LangGraph, with a real-time Streamlit dashboard showing
+  raw alerts, correlated clusters, priority ranking, and BLUF cards.
+
+# REQUIRED — IBM Bob / watsonx Integration
+ibm_bob_integration:
+  model: "ibm/granite-3-8b-instruct"
+  sdk: "ibm-watsonx-ai>=1.1"
+  integration_point: "BLUF summary generation (src/pipeline/bluf.py)"
+  description: >
+    IBM watsonx Granite-3 is load-bearing in the BLUF generation stage.
+    For each prioritised threat cluster the pipeline constructs a structured
+    prompt containing alert summaries, correlated source types, severity
+    scores, and mapped ATT&CK techniques, then calls ModelInference.generate()
+    to produce a BLUF brief. The LLM output is parsed into a structured
+    BLUFBrief Pydantic model (bottom_line, confidence, techniques,
+    recommended_action). The pipeline does not mock or template this call —
+    it is a real watsonx API invocation.
+
+# REQUIRED — Tech Stack
+tech_stack:
+  orchestration: "LangGraph 0.2+"
+  correlation: "sentence-transformers (all-MiniLM-L6-v2) + FAISS"
+  classification: "scikit-learn RandomForestClassifier"
+  attack_mapping: "MITRE ATT&CK STIX JSON (mitreattack-python)"
+  llm: "IBM watsonx.ai — ibm/granite-3-8b-instruct"
+  storage: "SQLite via SQLAlchemy"
+  ui: "Streamlit"
+  language: "Python 3.11+"
+
+# REQUIRED — Repository
+repository_url: "https://github.com/YOUR_USERNAME/threat-intelligence-d2"   # update before submission
+
+# REQUIRED — Demo
+demo_video_url: "https://youtu.be/PLACEHOLDER"    # update before submission
+live_demo_url: "http://localhost:8501"             # update if deployed
+
+# REQUIRED — Running the Submission
+quickstart: |
+  pip install -r requirements.txt
+  cp .env.example .env   # add your WATSONX_API_KEY + WATSONX_PROJECT_ID
+  python src/data/generate_alerts.py --seed 42 --output data/synthetic_alerts.json
+  python src/run_pipeline.py --input data/synthetic_alerts.json --reset-db
+  streamlit run src/app.py
