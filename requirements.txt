@@ -1,0 +1,45 @@
+# ============================================================
+# ThreatLens AI — Python Dependencies
+# Install: pip install -r requirements.txt
+# Python 3.11+ required
+# ============================================================
+
+# ── LangGraph / LangChain orchestration ──────────────────────
+langgraph>=0.2.0
+langchain>=0.2.0
+langchain-ibm>=0.3.0
+
+# ── IBM watsonx.ai SDK (BLUF generation via Granite-3) ───────
+ibm-watsonx-ai>=1.1.0
+
+# ── Semantic correlation ──────────────────────────────────────
+sentence-transformers>=3.0.0
+faiss-cpu>=1.8.0
+
+# ── Classification ────────────────────────────────────────────
+scikit-learn>=1.5.0
+joblib>=1.3.0
+
+# ── MITRE ATT&CK STIX mapping ────────────────────────────────
+mitreattack-python>=3.0.0
+stix2>=3.0.0
+
+# ── Storage / ORM ────────────────────────────────────────────
+sqlalchemy>=2.0.0
+
+# ── Validation & schema ──────────────────────────────────────
+pydantic>=2.0.0
+
+# ── Dashboard ─────────────────────────────────────────────────
+streamlit>=1.36.0
+plotly>=5.20.0
+
+# ── Data handling ─────────────────────────────────────────────
+numpy>=1.26.0
+pandas>=2.2.0
+
+# ── Utilities ─────────────────────────────────────────────────
+python-dotenv>=1.0.0
+requests>=2.31.0
+tqdm>=4.66.0
+colorama>=0.4.6
