@@ -1,0 +1,811 @@
+[
+  {
+    "source_type": "satellite",
+    "feed_id": "210f0636-f325-43ae-bce9-58777be0dcf4",
+    "timestamp": "2024-09-01T09:29:00Z",
+    "severity": "medium",
+    "satellite_id": "Milstar-6",
+    "latitude": -39.8741,
+    "longitude": -5.2508,
+    "anomaly_type": "signal jamming detected",
+    "description": "Satellite Milstar-6 reporting signal jamming detected at position (-39.8741, -5.2508). Signal-to-noise ratio degraded by 38%. Possible electronic warfare / jamming activity in region.",
+    "snr_degradation_pct": 56,
+    "is_false_positive": false
+  },
+  {
+    "source_type": "intel_report",
+    "report_id": "INTEL-5349",
+    "timestamp": "2024-09-02T10:32:00Z",
+    "severity": "low",
+    "threat_actor": "UNC2452",
+    "country_of_origin": "RU",
+    "ttps": [
+      "T1021",
+      "T1048",
+      "T1105",
+      "T1059"
+    ],
+    "cve_ids": [
+      "CVE-2024-21762"
+    ],
+    "description": "OSINT intelligence bulletin: Threat actor UNC2452 (origin: RU) has been observed leveraging CVE-2024-21762 in targeted operations against defense and aerospace entities. TTPs observed: T1021, T1048, T1105, T1059. Campaign appears ongoing with high operational tempo.",
+    "confidence": 0.65,
+    "source_name": "MISP feed",
+    "is_false_positive": false
+  },
+  {
+    "source_type": "intel_report",
+    "report_id": "INTEL-4853",
+    "timestamp": "2024-09-03T12:55:00Z",
+    "severity": "low",
+    "threat_actor": "Lazarus Group",
+    "country_of_origin": "RU",
+    "ttps": [
+      "T1486",
+      "T1078"
+    ],
+    "cve_ids": [],
+    "description": "Open-source report from social media mentions actor Lazarus Group. Low confidence \u2014 no technical indicators corroborated. Likely disinformation or misattribution. Recommend monitoring only.",
+    "confidence": 0.25,
+    "source_name": "MISP feed",
+    "is_false_positive": true
+  },
+  {
+    "source_type": "cyber_sensor",
+    "sensor_id": "SENSOR-05",
+    "log_id": "a4dc8eb7-8122-4117-af31-24d8faf7da94",
+    "timestamp": "2024-09-03T08:04:00Z",
+    "severity": "low",
+    "signature_id": "SID-137778",
+    "signature_name": "ET SCAN Nessus Vulnerability Scanner",
+    "protocol": "UDP",
+    "source_ip": "5.39.181.110",
+    "dest_ip": "10.0.1.29",
+    "bytes_transferred": 9773400,
+    "description": "IDS signature ET SCAN Nessus Vulnerability Scanner triggered from 5.39.181.110 to 10.0.1.29. Source confirmed as authorized Nessus scanner \u2014 false positive.",
+    "is_false_positive": true
+  },
+  {
+    "source_type": "intel_report",
+    "report_id": "INTEL-2684",
+    "timestamp": "2024-09-03T06:52:00Z",
+    "severity": "high",
+    "threat_actor": "Lazarus Group",
+    "country_of_origin": "IR",
+    "ttps": [
+      "T1059",
+      "T1105"
+    ],
+    "cve_ids": [
+      "CVE-2024-21762"
+    ],
+    "description": "OSINT intelligence bulletin: Threat actor Lazarus Group (origin: IR) has been observed leveraging CVE-2024-21762 in targeted operations against defense and aerospace entities. TTPs observed: T1059, T1105. Campaign appears ongoing with high operational tempo.",
+    "confidence": 0.65,
+    "source_name": "CrowdStrike Adversary Intel",
+    "is_false_positive": false
+  },
+  {
+    "source_type": "cyber_sensor",
+    "sensor_id": "SENSOR-07",
+    "log_id": "6db4740b-d334-4b26-a06d-93b64c9ad5b3",
+    "timestamp": "2024-09-03T09:55:00Z",
+    "severity": "low",
+    "signature_id": "SID-444207",
+    "signature_name": "ET SCAN Nessus Vulnerability Scanner",
+    "protocol": "UDP",
+    "source_ip": "91.108.4.79",
+    "dest_ip": "10.0.2.58",
+    "bytes_transferred": 1165198,
+    "description": "IDS signature ET SCAN Nessus Vulnerability Scanner triggered from 91.108.4.79 to 10.0.2.58. Source confirmed as authorized Nessus scanner \u2014 false positive.",
+    "is_false_positive": true
+  },
+  {
+    "source_type": "intel_report",
+    "report_id": "INTEL-5808",
+    "timestamp": "2024-08-31T23:57:00Z",
+    "severity": "medium",
+    "threat_actor": "Charming Kitten",
+    "country_of_origin": "IR",
+    "ttps": [
+      "T1105",
+      "T1078",
+      "T1071",
+      "T1048"
+    ],
+    "cve_ids": [
+      "CVE-2023-44487"
+    ],
+    "description": "OSINT intelligence bulletin: Threat actor Charming Kitten (origin: IR) has been observed leveraging CVE-2023-44487 in targeted operations against defense and aerospace entities. TTPs observed: T1105, T1078, T1071, T1048. Campaign appears ongoing with high operational tempo.",
+    "confidence": 0.69,
+    "source_name": "AlienVault OTX",
+    "is_false_positive": false
+  },
+  {
+    "source_type": "cyber_sensor",
+    "sensor_id": "SENSOR-11",
+    "log_id": "a438a738-0f91-4e94-9ac0-f3b1c0647a44",
+    "timestamp": "2024-09-01T02:43:00Z",
+    "severity": "medium",
+    "signature_id": "SID-576786",
+    "signature_name": "MALWARE-CNC Known RAT Beacon",
+    "protocol": "UDP",
+    "source_ip": "185.220.101.165",
+    "dest_ip": "192.168.20.35",
+    "bytes_transferred": 5662831,
+    "description": "Cyber sensor MALWARE-CNC Known RAT Beacon triggered. TCP traffic from 185.220.101.165 to 192.168.20.35, 4,365,210 bytes. Signature confidence: 82%. Pattern consistent with C2 beaconing or lateral movement.",
+    "is_false_positive": false
+  },
+  {
+    "source_type": "cyber_sensor",
+    "sensor_id": "SENSOR-19",
+    "log_id": "005d10d7-18b1-4f74-bf20-a4b1ef133c34",
+    "timestamp": "2024-09-01T00:26:00Z",
+    "severity": "medium",
+    "signature_id": "SID-852787",
+    "signature_name": "ET DROP Known Bad CVE-2024-21762 Exploit Attempt",
+    "protocol": "UDP",
+    "source_ip": "194.165.16.137",
+    "dest_ip": "10.0.2.42",
+    "bytes_transferred": 3567793,
+    "description": "Cyber sensor ET DROP Known Bad CVE-2024-21762 Exploit Attempt triggered. TCP traffic from 194.165.16.137 to 10.0.2.42, 3,540,216 bytes. Signature confidence: 99%. Pattern consistent with C2 beaconing or lateral movement.",
+    "is_false_positive": false
+  },
+  {
+    "source_type": "siem",
+    "alert_id": "f5744ef9-50b7-49aa-a79a-606f9715ecaa",
+    "timestamp": "2024-09-02T19:30:00Z",
+    "severity": "medium",
+    "event_type": "brute_force_login",
+    "source_ip": "91.108.4.112",
+    "destination_ip": "10.0.1.99",
+    "description": "SIEM detected brute force login from external host 91.108.4.112 targeting internal asset 10.0.1.99. Exploit attempt using CVE-2024-3400 observed. Attributed to threat actor cluster Charming Kitten.",
+    "rule_name": "RULE-9518",
+    "hostname": "WIN-925.corp.mil",
+    "cve_ids": [
+      "CVE-2024-3400"
+    ],
+    "actor": "Charming Kitten",
+    "is_false_positive": false
+  },
+  {
+    "source_type": "siem",
+    "alert_id": "98e064c8-16c0-46ed-93e6-ba683c8b0c0b",
+    "timestamp": "2024-09-03T04:17:00Z",
+    "severity": "critical",
+    "event_type": "c2_beacon",
+    "source_ip": "5.39.192.40",
+    "destination_ip": "10.0.2.222",
+    "description": "SIEM detected c2 beacon from external host 5.39.192.40 targeting internal asset 10.0.2.222. Exploit attempt using CVE-2023-44487 observed. Attributed to threat actor cluster Lazarus Group.",
+    "rule_name": "RULE-6442",
+    "hostname": "WIN-901.corp.mil",
+    "cve_ids": [
+      "CVE-2023-44487"
+    ],
+    "actor": "Lazarus Group",
+    "is_false_positive": false
+  },
+  {
+    "source_type": "cyber_sensor",
+    "sensor_id": "SENSOR-05",
+    "log_id": "0a2f21cf-62e2-4a81-a082-017707dec562",
+    "timestamp": "2024-09-02T06:15:00Z",
+    "severity": "critical",
+    "signature_id": "SID-324345",
+    "signature_name": "ET INFO DNS Query for Dynamic DNS Domain",
+    "protocol": "TCP",
+    "source_ip": "91.108.4.86",
+    "dest_ip": "192.168.10.229",
+    "bytes_transferred": 6960840,
+    "description": "Cyber sensor ET INFO DNS Query for Dynamic DNS Domain triggered. UDP traffic from 91.108.4.86 to 192.168.10.229, 3,880,435 bytes. Signature confidence: 82%. Pattern consistent with C2 beaconing or lateral movement.",
+    "is_false_positive": false
+  },
+  {
+    "source_type": "intel_report",
+    "report_id": "INTEL-8612",
+    "timestamp": "2024-09-03T18:12:00Z",
+    "severity": "low",
+    "threat_actor": "Unknown",
+    "country_of_origin": "KP",
+    "ttps": [
+      "T1021",
+      "T1486"
+    ],
+    "cve_ids": [],
+    "description": "Open-source report from social media mentions actor Unknown. Low confidence \u2014 no technical indicators corroborated. Likely disinformation or misattribution. Recommend monitoring only.",
+    "confidence": 0.13,
+    "source_name": "CrowdStrike Adversary Intel",
+    "is_false_positive": true
+  },
+  {
+    "source_type": "satellite",
+    "feed_id": "782dbbc3-7a39-47ac-bd4e-f1ee1cad59e6",
+    "timestamp": "2024-09-02T01:12:00Z",
+    "severity": "high",
+    "satellite_id": "AEHF-7",
+    "latitude": -77.4047,
+    "longitude": 59.1256,
+    "anomaly_type": "unauthorized uplink attempt",
+    "description": "Satellite AEHF-7 reporting unauthorized uplink attempt at position (-77.4047, 59.1256). Signal-to-noise ratio degraded by 25%. Possible electronic warfare / jamming activity in region.",
+    "snr_degradation_pct": 54,
+    "is_false_positive": false
+  },
+  {
+    "source_type": "intel_report",
+    "report_id": "INTEL-9928",
+    "timestamp": "2024-08-31T23:56:00Z",
+    "severity": "critical",
+    "threat_actor": "Charming Kitten",
+    "country_of_origin": "Unknown",
+    "ttps": [
+      "T1133",
+      "T1021"
+    ],
+    "cve_ids": [
+      "CVE-2023-44487"
+    ],
+    "description": "OSINT intelligence bulletin: Threat actor Charming Kitten (origin: Unknown) has been observed leveraging CVE-2023-44487 in targeted operations against defense and aerospace entities. TTPs observed: T1133, T1021. Campaign appears ongoing with high operational tempo.",
+    "confidence": 0.81,
+    "source_name": "AlienVault OTX",
+    "is_false_positive": false
+  },
+  {
+    "source_type": "satellite",
+    "feed_id": "94bb261b-27fe-4dd7-bfda-c79bb1425759",
+    "timestamp": "2024-09-02T10:34:00Z",
+    "severity": "info",
+    "satellite_id": "Milstar-6",
+    "latitude": 22.8147,
+    "longitude": -81.1449,
+    "anomaly_type": "scheduled station-keeping maneuver",
+    "description": "Satellite Milstar-6 executed planned station-keeping burn at (22.8147, -81.1449). Nominal operation \u2014 flagged by automated threshold.",
+    "snr_degradation_pct": 0,
+    "is_false_positive": true
+  },
+  {
+    "source_type": "intel_report",
+    "report_id": "INTEL-2124",
+    "timestamp": "2024-09-03T00:19:00Z",
+    "severity": "info",
+    "threat_actor": "Sandworm",
+    "country_of_origin": "RU",
+    "ttps": [
+      "T1133",
+      "T1078",
+      "T1078"
+    ],
+    "cve_ids": [
+      "CVE-2023-23397"
+    ],
+    "description": "OSINT intelligence bulletin: Threat actor Sandworm (origin: RU) has been observed leveraging CVE-2023-23397 in targeted operations against defense and aerospace entities. TTPs observed: T1133, T1078, T1078. Campaign appears ongoing with high operational tempo.",
+    "confidence": 0.69,
+    "source_name": "MISP feed",
+    "is_false_positive": false
+  },
+  {
+    "source_type": "siem",
+    "alert_id": "1c52deb2-75d6-468b-a58c-27aacde855c0",
+    "timestamp": "2024-08-31T23:53:00Z",
+    "severity": "low",
+    "event_type": "privilege_escalation",
+    "source_ip": "91.108.4.27",
+    "destination_ip": "10.0.1.98",
+    "description": "SIEM detected privilege escalation from external host 91.108.4.27 targeting internal asset 10.0.1.98. Exploit attempt using CVE-2024-3400 observed. Attributed to threat actor cluster APT41.",
+    "rule_name": "RULE-4150",
+    "hostname": "WIN-821.corp.mil",
+    "cve_ids": [
+      "CVE-2024-3400"
+    ],
+    "actor": "APT41",
+    "is_false_positive": false
+  },
+  {
+    "source_type": "satellite",
+    "feed_id": "57896c47-06a5-46b1-8d15-7fdd5ce25e60",
+    "timestamp": "2024-09-01T06:10:00Z",
+    "severity": "high",
+    "satellite_id": "USA-327",
+    "latitude": 59.2827,
+    "longitude": -164.1288,
+    "anomaly_type": "unauthorized uplink attempt",
+    "description": "Satellite USA-327 reporting unauthorized uplink attempt at position (59.2827, -164.1288). Signal-to-noise ratio degraded by 19%. Possible electronic warfare / jamming activity in region.",
+    "snr_degradation_pct": 16,
+    "is_false_positive": false
+  },
+  {
+    "source_type": "siem",
+    "alert_id": "c926aba9-ee1e-45dc-924d-848c67cf5f98",
+    "timestamp": "2024-09-03T21:44:00Z",
+    "severity": "low",
+    "event_type": "compliance scan from approved vendor",
+    "source_ip": "194.165.16.151",
+    "destination_ip": "10.0.2.2",
+    "description": "SIEM flagged compliance scan from approved vendor from 194.165.16.151 to 10.0.2.2. Traffic pattern matched alert rule but source is whitelisted.",
+    "rule_name": "RULE-2104",
+    "hostname": "WIN-132.corp.mil",
+    "cve_ids": [],
+    "actor": "N/A",
+    "is_false_positive": true
+  },
+  {
+    "source_type": "siem",
+    "alert_id": "629ae5a7-05bb-44c3-8d4b-6b354c794076",
+    "timestamp": "2024-09-01T08:56:00Z",
+    "severity": "low",
+    "event_type": "authorized pen-test traffic",
+    "source_ip": "45.83.64.207",
+    "destination_ip": "10.0.1.13",
+    "description": "SIEM flagged authorized pen-test traffic from 45.83.64.207 to 10.0.1.13. Traffic pattern matched alert rule but source is whitelisted.",
+    "rule_name": "RULE-8956",
+    "hostname": "WIN-592.corp.mil",
+    "cve_ids": [],
+    "actor": "N/A",
+    "is_false_positive": true
+  },
+  {
+    "source_type": "intel_report",
+    "report_id": "INTEL-4470",
+    "timestamp": "2024-09-01T00:29:00Z",
+    "severity": "high",
+    "threat_actor": "Lazarus Group",
+    "country_of_origin": "IR",
+    "ttps": [
+      "T1048",
+      "T1486"
+    ],
+    "cve_ids": [
+      "CVE-2023-23397"
+    ],
+    "description": "OSINT intelligence bulletin: Threat actor Lazarus Group (origin: IR) has been observed leveraging CVE-2023-23397 in targeted operations against defense and aerospace entities. TTPs observed: T1048, T1486. Campaign appears ongoing with high operational tempo.",
+    "confidence": 0.79,
+    "source_name": "CrowdStrike Adversary Intel",
+    "is_false_positive": false
+  },
+  {
+    "source_type": "siem",
+    "alert_id": "9d42c4d6-cad0-4ff4-8197-2b01829006f6",
+    "timestamp": "2024-09-02T06:37:00Z",
+    "severity": "medium",
+    "event_type": "lateral_movement",
+    "source_ip": "194.165.16.215",
+    "destination_ip": "10.0.1.160",
+    "description": "SIEM detected lateral movement from external host 194.165.16.215 targeting internal asset 10.0.1.160. Exploit attempt using CVE-2023-44487 observed. Attributed to threat actor cluster Lazarus Group.",
+    "rule_name": "RULE-4571",
+    "hostname": "WIN-576.corp.mil",
+    "cve_ids": [
+      "CVE-2023-44487"
+    ],
+    "actor": "Lazarus Group",
+    "is_false_positive": false
+  },
+  {
+    "source_type": "satellite",
+    "feed_id": "3343863d-00a0-4ce5-8058-98e13bff2ac0",
+    "timestamp": "2024-09-03T02:46:00Z",
+    "severity": "info",
+    "satellite_id": "USA-327",
+    "latitude": -21.7848,
+    "longitude": 174.7112,
+    "anomaly_type": "scheduled station-keeping maneuver",
+    "description": "Satellite USA-327 executed planned station-keeping burn at (-21.7848, 174.7112). Nominal operation \u2014 flagged by automated threshold.",
+    "snr_degradation_pct": 0,
+    "is_false_positive": true
+  },
+  {
+    "source_type": "satellite",
+    "feed_id": "851dc230-8311-48a1-b283-067175085151",
+    "timestamp": "2024-09-02T07:00:00Z",
+    "severity": "low",
+    "satellite_id": "AEHF-7",
+    "latitude": 51.7274,
+    "longitude": -141.0856,
+    "anomaly_type": "signal jamming detected",
+    "description": "Satellite AEHF-7 reporting signal jamming detected at position (51.7274, -141.0856). Signal-to-noise ratio degraded by 42%. Possible electronic warfare / jamming activity in region.",
+    "snr_degradation_pct": 14,
+    "is_false_positive": false
+  },
+  {
+    "source_type": "cyber_sensor",
+    "sensor_id": "SENSOR-01",
+    "log_id": "75471a48-2bb8-4234-8bfe-64217efbf8f5",
+    "timestamp": "2024-09-03T10:27:00Z",
+    "severity": "high",
+    "signature_id": "SID-887443",
+    "signature_name": "INDICATOR-SCAN SSH brute force login attempt",
+    "protocol": "TCP",
+    "source_ip": "45.83.64.227",
+    "dest_ip": "10.0.2.184",
+    "bytes_transferred": 7133281,
+    "description": "Cyber sensor INDICATOR-SCAN SSH brute force login attempt triggered. HTTP traffic from 45.83.64.227 to 10.0.2.184, 4,093,891 bytes. Signature confidence: 74%. Pattern consistent with C2 beaconing or lateral movement.",
+    "is_false_positive": false
+  },
+  {
+    "source_type": "siem",
+    "alert_id": "b2a0087c-ec5a-4ab4-b039-a2396066f1a3",
+    "timestamp": "2024-09-04T00:03:00Z",
+    "severity": "medium",
+    "event_type": "persistence_mechanism",
+    "source_ip": "194.165.16.149",
+    "destination_ip": "10.0.1.159",
+    "description": "SIEM detected persistence mechanism from external host 194.165.16.149 targeting internal asset 10.0.1.159. Exploit attempt using CVE-2024-1709 observed. Attributed to threat actor cluster APT41.",
+    "rule_name": "RULE-6183",
+    "hostname": "WIN-367.corp.mil",
+    "cve_ids": [
+      "CVE-2024-1709"
+    ],
+    "actor": "APT41",
+    "is_false_positive": false
+  },
+  {
+    "source_type": "satellite",
+    "feed_id": "a2c1eb60-f5c8-4c2a-bed7-5b46d53b053f",
+    "timestamp": "2024-09-01T00:29:00Z",
+    "severity": "medium",
+    "satellite_id": "USA-327",
+    "latitude": 75.3288,
+    "longitude": 35.6201,
+    "anomaly_type": "frequency deviation",
+    "description": "Satellite USA-327 reporting frequency deviation at position (75.3288, 35.6201). Signal-to-noise ratio degraded by 18%. Possible electronic warfare / jamming activity in region.",
+    "snr_degradation_pct": 23,
+    "is_false_positive": false
+  },
+  {
+    "source_type": "cyber_sensor",
+    "sensor_id": "SENSOR-10",
+    "log_id": "9d4ac952-4567-4885-9c91-d29df3746c9f",
+    "timestamp": "2024-09-02T14:05:00Z",
+    "severity": "low",
+    "signature_id": "SID-233470",
+    "signature_name": "ET SCAN Nessus Vulnerability Scanner",
+    "protocol": "TCP",
+    "source_ip": "5.39.80.171",
+    "dest_ip": "192.168.20.84",
+    "bytes_transferred": 7054430,
+    "description": "IDS signature ET SCAN Nessus Vulnerability Scanner triggered from 5.39.80.171 to 192.168.20.84. Source confirmed as authorized Nessus scanner \u2014 false positive.",
+    "is_false_positive": true
+  },
+  {
+    "source_type": "satellite",
+    "feed_id": "32002a66-7336-4ddc-80b5-051f68d8fef6",
+    "timestamp": "2024-09-02T15:49:00Z",
+    "severity": "info",
+    "satellite_id": "KH-11-12",
+    "latitude": -18.7585,
+    "longitude": 61.8085,
+    "anomaly_type": "scheduled station-keeping maneuver",
+    "description": "Satellite KH-11-12 executed planned station-keeping burn at (-18.7585, 61.8085). Nominal operation \u2014 flagged by automated threshold.",
+    "snr_degradation_pct": 0,
+    "is_false_positive": true
+  },
+  {
+    "source_type": "cyber_sensor",
+    "sensor_id": "SENSOR-09",
+    "log_id": "c9024712-4fa9-449b-a5d5-795e838a333b",
+    "timestamp": "2024-08-31T23:59:00Z",
+    "severity": "info",
+    "signature_id": "SID-766563",
+    "signature_name": "ET DROP Known Bad CVE-2024-21762 Exploit Attempt",
+    "protocol": "UDP",
+    "source_ip": "91.108.4.27",
+    "dest_ip": "10.0.1.98",
+    "bytes_transferred": 2729394,
+    "description": "Cyber sensor ET DROP Known Bad CVE-2024-21762 Exploit Attempt triggered. UDP traffic from 91.108.4.27 to 10.0.1.98, 1,695,034 bytes. Signature confidence: 82%. Pattern consistent with C2 beaconing or lateral movement.",
+    "is_false_positive": false
+  },
+  {
+    "source_type": "cyber_sensor",
+    "sensor_id": "SENSOR-14",
+    "log_id": "846e391a-e5f8-41f0-80fd-3e49b722c448",
+    "timestamp": "2024-09-03T11:56:00Z",
+    "severity": "high",
+    "signature_id": "SID-589710",
+    "signature_name": "ET POLICY SMB Administrator Login",
+    "protocol": "ICMP",
+    "source_ip": "194.165.16.201",
+    "dest_ip": "192.168.20.207",
+    "bytes_transferred": 909353,
+    "description": "Cyber sensor ET POLICY SMB Administrator Login triggered. TCP traffic from 194.165.16.201 to 192.168.20.207, 7,232,350 bytes. Signature confidence: 81%. Pattern consistent with C2 beaconing or lateral movement.",
+    "is_false_positive": false
+  },
+  {
+    "source_type": "satellite",
+    "feed_id": "f3491c67-6f3e-4cac-bcd8-642a86a4c2a8",
+    "timestamp": "2024-08-31T23:34:00Z",
+    "severity": "low",
+    "satellite_id": "AEHF-7",
+    "latitude": -52.2887,
+    "longitude": -83.888,
+    "anomaly_type": "orbit insertion anomaly",
+    "description": "Satellite AEHF-7 reporting orbit insertion anomaly at position (-52.2887, -83.888). Signal-to-noise ratio degraded by 35%. Possible electronic warfare / jamming activity in region.",
+    "snr_degradation_pct": 38,
+    "is_false_positive": false
+  },
+  {
+    "source_type": "cyber_sensor",
+    "sensor_id": "SENSOR-04",
+    "log_id": "b8c60272-5e9c-4482-94bb-f0a6af5675dc",
+    "timestamp": "2024-08-31T23:45:00Z",
+    "severity": "medium",
+    "signature_id": "SID-335612",
+    "signature_name": "INDICATOR-SCAN SSH brute force login attempt",
+    "protocol": "TCP",
+    "source_ip": "45.83.64.1",
+    "dest_ip": "192.168.10.249",
+    "bytes_transferred": 5672646,
+    "description": "Cyber sensor INDICATOR-SCAN SSH brute force login attempt triggered. HTTP traffic from 45.83.64.1 to 192.168.10.249, 8,683,993 bytes. Signature confidence: 84%. Pattern consistent with C2 beaconing or lateral movement.",
+    "is_false_positive": false
+  },
+  {
+    "source_type": "siem",
+    "alert_id": "eb55f653-69cf-4ce1-9896-691247663701",
+    "timestamp": "2024-09-03T22:10:00Z",
+    "severity": "high",
+    "event_type": "data_exfiltration",
+    "source_ip": "194.165.16.70",
+    "destination_ip": "192.168.10.155",
+    "description": "SIEM detected data exfiltration from external host 194.165.16.70 targeting internal asset 192.168.10.155. Exploit attempt using CVE-2022-30190 observed. Attributed to threat actor cluster Charming Kitten.",
+    "rule_name": "RULE-5325",
+    "hostname": "WIN-617.corp.mil",
+    "cve_ids": [
+      "CVE-2022-30190"
+    ],
+    "actor": "Charming Kitten",
+    "is_false_positive": false
+  },
+  {
+    "source_type": "intel_report",
+    "report_id": "INTEL-3200",
+    "timestamp": "2024-09-03T07:46:00Z",
+    "severity": "low",
+    "threat_actor": "Sandworm",
+    "country_of_origin": "IR",
+    "ttps": [
+      "T1486",
+      "T1105",
+      "T1021",
+      "T1048"
+    ],
+    "cve_ids": [
+      "CVE-2023-23397"
+    ],
+    "description": "OSINT intelligence bulletin: Threat actor Sandworm (origin: IR) has been observed leveraging CVE-2023-23397 in targeted operations against defense and aerospace entities. TTPs observed: T1486, T1105, T1021, T1048. Campaign appears ongoing with high operational tempo.",
+    "confidence": 0.59,
+    "source_name": "MISP feed",
+    "is_false_positive": false
+  },
+  {
+    "source_type": "intel_report",
+    "report_id": "INTEL-6279",
+    "timestamp": "2024-09-02T23:59:00Z",
+    "severity": "medium",
+    "threat_actor": "Lazarus Group",
+    "country_of_origin": "KP",
+    "ttps": [
+      "T1021",
+      "T1055",
+      "T1105",
+      "T1059"
+    ],
+    "cve_ids": [
+      "CVE-2023-44487"
+    ],
+    "description": "OSINT intelligence bulletin: Threat actor Lazarus Group (origin: KP) has been observed leveraging CVE-2023-44487 in targeted operations against defense and aerospace entities. TTPs observed: T1021, T1055, T1105, T1059. Campaign appears ongoing with high operational tempo.",
+    "confidence": 0.79,
+    "source_name": "Mandiant Intel",
+    "is_false_positive": false
+  },
+  {
+    "source_type": "siem",
+    "alert_id": "fd7046a0-4192-4eb4-8fdb-e60a25924c2a",
+    "timestamp": "2024-09-02T15:58:00Z",
+    "severity": "low",
+    "event_type": "persistence_mechanism",
+    "source_ip": "45.83.64.157",
+    "destination_ip": "192.168.20.213",
+    "description": "SIEM detected persistence mechanism from external host 45.83.64.157 targeting internal asset 192.168.20.213. Exploit attempt using CVE-2023-44487 observed. Attributed to threat actor cluster Unknown.",
+    "rule_name": "RULE-5246",
+    "hostname": "WIN-869.corp.mil",
+    "cve_ids": [
+      "CVE-2023-44487"
+    ],
+    "actor": "Unknown",
+    "is_false_positive": false
+  },
+  {
+    "source_type": "siem",
+    "alert_id": "0e2e383e-ed04-48b6-a414-9f897dcc4f76",
+    "timestamp": "2024-08-31T23:47:00Z",
+    "severity": "high",
+    "event_type": "persistence_mechanism",
+    "source_ip": "185.220.101.7",
+    "destination_ip": "192.168.10.63",
+    "description": "SIEM detected persistence mechanism from external host 185.220.101.7 targeting internal asset 192.168.10.63. Exploit attempt using CVE-2023-44487 observed. Attributed to threat actor cluster Charming Kitten.",
+    "rule_name": "RULE-3547",
+    "hostname": "WIN-320.corp.mil",
+    "cve_ids": [
+      "CVE-2023-44487"
+    ],
+    "actor": "Charming Kitten",
+    "is_false_positive": false
+  },
+  {
+    "source_type": "siem",
+    "alert_id": "733a113e-5188-4a20-8623-d7ec7f5846ae",
+    "timestamp": "2024-09-02T03:09:00Z",
+    "severity": "medium",
+    "event_type": "privilege_escalation",
+    "source_ip": "5.39.122.204",
+    "destination_ip": "10.0.2.169",
+    "description": "SIEM detected privilege escalation from external host 5.39.122.204 targeting internal asset 10.0.2.169. Exploit attempt using CVE-2024-3400 observed. Attributed to threat actor cluster APT41.",
+    "rule_name": "RULE-6491",
+    "hostname": "WIN-195.corp.mil",
+    "cve_ids": [
+      "CVE-2024-3400"
+    ],
+    "actor": "APT41",
+    "is_false_positive": false
+  },
+  {
+    "source_type": "siem",
+    "alert_id": "69c041d1-3e42-45c4-912d-5a7c86b8e23f",
+    "timestamp": "2024-09-01T00:04:00Z",
+    "severity": "medium",
+    "event_type": "lateral_movement",
+    "source_ip": "194.165.16.137",
+    "destination_ip": "10.0.2.42",
+    "description": "SIEM detected lateral movement from external host 194.165.16.137 targeting internal asset 10.0.2.42. Exploit attempt using CVE-2024-1709 observed. Attributed to threat actor cluster Unknown.",
+    "rule_name": "RULE-5304",
+    "hostname": "WIN-864.corp.mil",
+    "cve_ids": [
+      "CVE-2024-1709"
+    ],
+    "actor": "Unknown",
+    "is_false_positive": false
+  },
+  {
+    "source_type": "cyber_sensor",
+    "sensor_id": "SENSOR-18",
+    "log_id": "8078a4a0-b1f0-46e0-9172-b9b7fb9cd213",
+    "timestamp": "2024-09-03T09:33:00Z",
+    "severity": "high",
+    "signature_id": "SID-884309",
+    "signature_name": "ET SCAN Rapid SSH Scanning",
+    "protocol": "UDP",
+    "source_ip": "91.108.4.109",
+    "dest_ip": "192.168.20.40",
+    "bytes_transferred": 959586,
+    "description": "Cyber sensor ET SCAN Rapid SSH Scanning triggered. TCP traffic from 91.108.4.109 to 192.168.20.40, 9,717,544 bytes. Signature confidence: 93%. Pattern consistent with C2 beaconing or lateral movement.",
+    "is_false_positive": false
+  },
+  {
+    "source_type": "satellite",
+    "feed_id": "2d5eac8b-fdd5-4cad-8df3-cefd0afbbeda",
+    "timestamp": "2024-09-03T02:55:00Z",
+    "severity": "medium",
+    "satellite_id": "KH-11-12",
+    "latitude": 75.5175,
+    "longitude": 173.0599,
+    "anomaly_type": "unauthorized uplink attempt",
+    "description": "Satellite KH-11-12 reporting unauthorized uplink attempt at position (75.5175, 173.0599). Signal-to-noise ratio degraded by 44%. Possible electronic warfare / jamming activity in region.",
+    "snr_degradation_pct": 37,
+    "is_false_positive": false
+  },
+  {
+    "source_type": "siem",
+    "alert_id": "6cdd6c83-7af4-410b-a16f-84390108ad09",
+    "timestamp": "2024-09-01T00:08:00Z",
+    "severity": "high",
+    "event_type": "brute_force_login",
+    "source_ip": "5.39.110.230",
+    "destination_ip": "192.168.20.93",
+    "description": "SIEM detected brute force login from external host 5.39.110.230 targeting internal asset 192.168.20.93. Exploit attempt using CVE-2023-44487 observed. Attributed to threat actor cluster Charming Kitten.",
+    "rule_name": "RULE-8668",
+    "hostname": "WIN-641.corp.mil",
+    "cve_ids": [
+      "CVE-2023-44487"
+    ],
+    "actor": "Charming Kitten",
+    "is_false_positive": false
+  },
+  {
+    "source_type": "siem",
+    "alert_id": "7635476a-5781-475c-944a-f61ade2478f9",
+    "timestamp": "2024-09-02T14:01:00Z",
+    "severity": "high",
+    "event_type": "lateral_movement",
+    "source_ip": "45.83.64.219",
+    "destination_ip": "192.168.20.138",
+    "description": "SIEM detected lateral movement from external host 45.83.64.219 targeting internal asset 192.168.20.138. Exploit attempt using CVE-2024-1709 observed. Attributed to threat actor cluster Charming Kitten.",
+    "rule_name": "RULE-1475",
+    "hostname": "WIN-498.corp.mil",
+    "cve_ids": [
+      "CVE-2024-1709"
+    ],
+    "actor": "Charming Kitten",
+    "is_false_positive": false
+  },
+  {
+    "source_type": "satellite",
+    "feed_id": "6b26d08f-abf6-4379-9d98-80f87117c7c7",
+    "timestamp": "2024-09-02T06:09:00Z",
+    "severity": "critical",
+    "satellite_id": "AEHF-7",
+    "latitude": 55.1813,
+    "longitude": -126.9526,
+    "anomaly_type": "signal jamming detected",
+    "description": "Satellite AEHF-7 reporting signal jamming detected at position (55.1813, -126.9526). Signal-to-noise ratio degraded by 30%. Possible electronic warfare / jamming activity in region.",
+    "snr_degradation_pct": 54,
+    "is_false_positive": false
+  },
+  {
+    "source_type": "siem",
+    "alert_id": "30ef72ac-9fdc-454a-8fe5-b3bf2eaf7b74",
+    "timestamp": "2024-08-31T23:34:00Z",
+    "severity": "medium",
+    "event_type": "persistence_mechanism",
+    "source_ip": "45.83.64.1",
+    "destination_ip": "192.168.10.249",
+    "description": "SIEM detected persistence mechanism from external host 45.83.64.1 targeting internal asset 192.168.10.249. Exploit attempt using CVE-2023-23397 observed. Attributed to threat actor cluster Lazarus Group.",
+    "rule_name": "RULE-9727",
+    "hostname": "WIN-884.corp.mil",
+    "cve_ids": [
+      "CVE-2023-23397"
+    ],
+    "actor": "Lazarus Group",
+    "is_false_positive": false
+  },
+  {
+    "source_type": "cyber_sensor",
+    "sensor_id": "SENSOR-12",
+    "log_id": "b04cab82-2e79-49a6-bae3-8a6b511257a6",
+    "timestamp": "2024-09-01T09:26:00Z",
+    "severity": "high",
+    "signature_id": "SID-172132",
+    "signature_name": "ET INFO DNS Query for Dynamic DNS Domain",
+    "protocol": "TCP",
+    "source_ip": "185.220.101.118",
+    "dest_ip": "10.0.1.19",
+    "bytes_transferred": 6200147,
+    "description": "Cyber sensor ET INFO DNS Query for Dynamic DNS Domain triggered. ICMP traffic from 185.220.101.118 to 10.0.1.19, 2,222,764 bytes. Signature confidence: 99%. Pattern consistent with C2 beaconing or lateral movement.",
+    "is_false_positive": false
+  },
+  {
+    "source_type": "intel_report",
+    "report_id": "INTEL-4006",
+    "timestamp": "2024-09-01T11:47:00Z",
+    "severity": "high",
+    "threat_actor": "APT28",
+    "country_of_origin": "CN",
+    "ttps": [
+      "T1071",
+      "T1105",
+      "T1190"
+    ],
+    "cve_ids": [
+      "CVE-2023-44487"
+    ],
+    "description": "OSINT intelligence bulletin: Threat actor APT28 (origin: CN) has been observed leveraging CVE-2023-44487 in targeted operations against defense and aerospace entities. TTPs observed: T1071, T1105, T1190. Campaign appears ongoing with high operational tempo.",
+    "confidence": 0.61,
+    "source_name": "Mandiant Intel",
+    "is_false_positive": false
+  },
+  {
+    "source_type": "intel_report",
+    "report_id": "INTEL-7232",
+    "timestamp": "2024-09-03T21:00:00Z",
+    "severity": "low",
+    "threat_actor": "Unknown",
+    "country_of_origin": "RU",
+    "ttps": [
+      "T1078",
+      "T1105",
+      "T1059"
+    ],
+    "cve_ids": [
+      "CVE-2023-23397"
+    ],
+    "description": "OSINT intelligence bulletin: Threat actor Unknown (origin: RU) has been observed leveraging CVE-2023-23397 in targeted operations against defense and aerospace entities. TTPs observed: T1078, T1105, T1059. Campaign appears ongoing with high operational tempo.",
+    "confidence": 0.86,
+    "source_name": "MISP feed",
+    "is_false_positive": false
+  }
+]
