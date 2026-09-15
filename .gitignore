@@ -1,0 +1,46 @@
+# ── Python ───────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+build/
+dist/
+*.egg-info/
+*.egg
+.eggs/
+
+# ── Virtual environments ──────────────────────────────────────
+.venv/
+venv/
+env/
+ENV/
+
+# ── Credentials — NEVER commit .env ──────────────────────────
+.env
+*.key
+*.pem
+secrets.yaml
+
+# ── Data (large/generated files) ─────────────────────────────
+data/synthetic_alerts.json
+data/threatintel.db
+data/attack_stix.json
+data/classifier_model.joblib
+
+# ── Streamlit cache ───────────────────────────────────────────
+.streamlit/
+
+# ── IDE / OS ─────────────────────────────────────────────────
+.vscode/
+.idea/
+*.DS_Store
+Thumbs.db
+
+# ── Jupyter ───────────────────────────────────────────────────
+.ipynb_checkpoints/
+*.ipynb
+
+# ── Logs ─────────────────────────────────────────────────────
+*.log
+logs/
